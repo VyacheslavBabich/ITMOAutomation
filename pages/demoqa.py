@@ -1,7 +1,5 @@
-from selenium.common.exceptions import NoSuchElementException
 from pages.base_page import BasePage
 from components.components import WebElement
-
 
 
 class DemoQa(BasePage):
@@ -14,11 +12,3 @@ class DemoQa(BasePage):
         self.btn_elements = WebElement(driver,"#app > div > div > div.home-body > div > div:nth-child(1)" )
 
         self.text_footer = WebElement(driver, '#app > footer > span')
-
-    def exist_icon(self):
-        try:
-            self.icon.find_element()
-        except NoSuchElementException:
-            return False
-        return True
-
