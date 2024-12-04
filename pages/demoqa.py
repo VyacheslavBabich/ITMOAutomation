@@ -13,7 +13,7 @@ class DemoQa(BasePage):
         self.icon = WebElement(driver,'#app > header > a')
         self.btn_elements = WebElement(driver,"#app > div > div > div.home-body > div > div:nth-child(1)" )
 
-        self.text_footer = WebElement(driver, '#app > div > span')
+        self.text_footer = WebElement(driver, '#app > footer > span')
 
     def exist_icon(self):
         try:
@@ -21,11 +21,4 @@ class DemoQa(BasePage):
         except NoSuchElementException:
             return False
         return True
-
-
-    # def click_on_the_icon(self):
-    #     self.find_element(locator='#app > header > a').click()
-    #
-    # def click_on_the_btn(self):
-    #     self.find_element(locator="#app > div > div > div.home-body > div > div:nth-child(1)").click()
 

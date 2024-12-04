@@ -8,4 +8,4 @@ class ElementsPage(BasePage):
         self.base_url = 'https://demoqa.com/elements'
         super().__init__(driver, self.base_url)
 
-        self.text_please = WebElement(driver, '#app > div > div > div.col-12.mt-4.col-md-6')
+        self.text_please = WebElement(driver, '#app > div > div > div > div.col-12.mt-4.col-md-6')
