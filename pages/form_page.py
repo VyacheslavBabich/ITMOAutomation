@@ -21,3 +21,4 @@ class FormPage(BasePage):
         self.hobbies = WebElement(driver, '#hobbies-checkbox-1')
         self.current_address = WebElement(driver, '#currentAddress')
 
+        self.btn_NCR = WebElement(driver, "//*[contains(text(), 'NCR)]", 'xpath')
